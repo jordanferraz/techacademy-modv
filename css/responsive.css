@@ -47,6 +47,10 @@
     .form-box form input{
         width: 100%;
     }
+
+    footer .footer-title, footer .footer-txt{
+        width: 90%;
+    }
 }
 
 @media(min-height:631px){

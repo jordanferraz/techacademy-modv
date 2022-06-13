@@ -107,8 +107,9 @@ form input{
     font-size: 18px;
     height: 45px;
     margin-bottom:13px;
-    border-radius: 30px;
-    border: 2px solid rgb(75, 184, 75);
+    border-radius: 0;
+    border:0;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 form [type="submit"]{
@@ -122,6 +123,23 @@ form [type="submit"]:hover{
 
 /* CARDS */
 
+.content-comojogar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-estadios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+    background-color: #f0f0f0;
+    padding-bottom: 70px;
+}
+
 .cards{
     width: 90%;
     max-width: 980px;
@@ -131,12 +149,48 @@ form [type="submit"]:hover{
     margin: auto;
 }
 
+.cards-title{
+    max-width: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-title h3{
+    margin: 20px 0px 10px 0px;
+    text-transform: center;
+    background-color: rgb(58, 151, 58);
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.cards-comojogar{
+    max-width: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards-comojogar p{
+    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333;
+}
+
 .card{
     display: flex;
     flex-direction: column;
     cursor: pointer;
     box-shadow: 5px 5px 7px -4px rgba(0,0,0,0.5);
     transition: all 0.3s ease 0s;
+    background-color: white;
 }
 
 .card:hover{
@@ -190,7 +244,7 @@ form [type="submit"]:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 80px auto 0px auto;
+    margin: 0px auto 0px auto;
     background-color: rgb(75, 184, 75);
     padding: 40px 0px 70px 0px;
 }
@@ -265,14 +319,16 @@ form [type="submit"]:hover{
     background-color: rgb(58, 151, 58);
 }
 
+/* FOOTER */
+
 footer{
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 0px 30px 0px;
+    padding: 30px 0px 35px 0px;
     color: #333;
     box-shadow: 2px 0px 8px rgba(0,0,0,0.3);
 }
@@ -281,6 +337,7 @@ footer .footer-title{
     font-size:18px;
     font-weight: 700;
     line-height: 20px;
+    text-align: center;
 }
 
 footer .footer-title a{
