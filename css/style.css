@@ -184,6 +184,12 @@ form [type="submit"]:hover{
     color: #333;
 }
 
+.cards-comojogar p a{
+    color:#333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
 .card{
     display: flex;
     flex-direction: column;
