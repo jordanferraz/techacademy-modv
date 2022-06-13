@@ -8,7 +8,7 @@
 }
 
 html, body{
-    height: 100vh;
+    /* height: 100vh; */
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     font-family: 'Source Sans Pro', 'Arial', sans-serif;
@@ -17,7 +17,8 @@ html, body{
 /* HEADER */
 
 header{
-    background-color: #0080ed;
+    background-color: rgb(75, 184, 75);
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.8);
 }
 
 header .container{
@@ -27,6 +28,10 @@ header .container{
     align-items: center;
     justify-content: space-between;
     margin: auto;
+}
+
+header .container img{
+    width: 250px;
 }
 
 header nav ul{
@@ -47,14 +52,17 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    background: rgba(255,255,255,0.15)
+    background: rgba(255,255,255,0.15);
+    font-weight: 700;
 }
 
 
 /* MAIN */
 
 main{
-    margin-bottom: 180px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.5);
 }
 
 main .container-main{
@@ -62,17 +70,22 @@ main .container-main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px auto 0px auto;
+    margin: 60px auto 0px auto;
+    padding: 0px 0px 50px 0px;
+    
 }
 
-main .container-main img{
-    width: 600px;
+main .container-main .container-image img{
+    width: 550px;
+    max-width: 550px;
+    margin: 0px 0px 0px 50px;
+    box-shadow: 5px 5px 7px -4px rgba(0,0,0,0.5);
 }
 
 main h2{
     color: black;
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 45px;
     font-weight: bold;
 }
 
@@ -81,6 +94,7 @@ main h3{
     font-size: 20px;
     line-height: 28px;
     margin: 10px 0;
+    font-weight: 400;
 }
 
 form{
@@ -94,11 +108,11 @@ form input{
     height: 45px;
     margin-bottom:13px;
     border-radius: 30px;
-    border: 2px solid #0080ed;
+    border: 2px solid rgb(75, 184, 75);
 }
 
 form [type="submit"]{
-    background-color: #0080ed;
+    background-color: rgb(75, 184, 75);
     color: white;
 }
 
@@ -121,7 +135,7 @@ form [type="submit"]:hover{
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    box-shadow: 5px 5px 15px -4px black;
+    box-shadow: 5px 5px 7px -4px rgba(0,0,0,0.5);
     transition: all 0.3s ease 0s;
 }
 
@@ -148,6 +162,10 @@ form [type="submit"]:hover{
     margin:20px;
 }
 
+.card-content .uppercase{
+    text-transform: uppercase;
+}
+
 .card-info{
     margin:20px;
 }
@@ -172,18 +190,108 @@ form [type="submit"]:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 980px;
-    margin: 40px auto 0 auto;
+    margin: 80px auto 0px auto;
+    background-color: rgb(75, 184, 75);
+    padding: 40px 0px 70px 0px;
 }
 
-.desafio{
-    width: 100%;
+.form-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    flex-direction: column;
+    max-width: 980px;
+}
+
+.form-box h4{
     text-transform: uppercase;
-    padding: 40px 0px;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.form-box form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px 100px;
+    box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.5);
+}
+
+.form-box form h4{
+    font-size:16px;
+    text-transform: none;
+    color: #333333;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top:25px;
     border: 1px solid #333;
-    margin-bottom:40px;
+    padding: 20px 35px;
+}
+
+.form-box form h4:hover{
+    background-color:#e2e2e2;
+    cursor: pointer;
+}
+
+.form-box form h4 a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.form-box form input{
+    width: 380px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 45px;
+    margin-bottom:13px;
+    border-radius: 0;
+    border:0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.form-box form [type="submit"]{
+    height:auto;
+    padding: 18px 0px 15px 0px;
+    text-transform: uppercase;
+}
+
+.form-box form [type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(58, 151, 58);
+}
+
+footer{
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px 30px 0px;
+    color: #333;
+    box-shadow: 2px 0px 8px rgba(0,0,0,0.3);
+}
+
+footer .footer-title{
+    font-size:18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+footer .footer-title a{
+    text-decoration: none;
+    color: #333333;
+}
+
+footer .footer-txt{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 5px 0px 0px 0px;
+    text-align: center;
 }

@@ -1,4 +1,8 @@
 @media (max-width: 1000px){
+    main .container-main{
+        width: 90%;
+        margin: 50px auto 0px auto;
+    }
     main .container-main div{
         margin: auto;
     }
@@ -28,8 +32,20 @@
         margin:12px;
     }
 
+    form input{
+        width: 100%;
+    }
+
     .container{
         padding: 0px 20px;
+    }
+
+    .form-box form{
+        padding:30px 20px;
+    }
+
+    .form-box form input{
+        width: 100%;
     }
 }
 
